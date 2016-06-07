@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="etB-3Y-O4H">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="9l3-Bz-aXl">
+            <objects>
+                <tableViewController id="etB-3Y-O4H" customClass="ViewController" customModule="StretchHeader070616" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" id="591-0L-Rfr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="8v2-6Z-m5j">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SHImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="txU-ND-kjH">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September 24" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vij-yl-wZr">
+                                    <rect key="frame" x="20" y="20" width="153" height="28"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="vij-yl-wZr" firstAttribute="leading" secondItem="8v2-6Z-m5j" secondAttribute="leading" constant="20" id="4j2-Fl-rDG"/>
+                                <constraint firstItem="vij-yl-wZr" firstAttribute="top" secondItem="8v2-6Z-m5j" secondAttribute="top" constant="20" id="DJK-bg-4T2"/>
+                                <constraint firstAttribute="bottom" secondItem="txU-ND-kjH" secondAttribute="bottom" id="PTB-Ld-8kd"/>
+                                <constraint firstItem="txU-ND-kjH" firstAttribute="top" secondItem="8v2-6Z-m5j" secondAttribute="top" id="dzx-Xn-pnG"/>
+                                <constraint firstAttribute="trailing" secondItem="txU-ND-kjH" secondAttribute="trailing" id="pcM-o3-iL0"/>
+                                <constraint firstItem="txU-ND-kjH" firstAttribute="leading" secondItem="8v2-6Z-m5j" secondAttribute="leading" id="w3T-4S-HoD"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="96" id="KSf-fk-vOq" customClass="NewsItemCell" customModule="StretchHeader070616" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="328" width="600" height="96"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KSf-fk-vOq" id="RsY-Xr-IHO">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="95"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhN-fm-xiB">
+                                            <rect key="frame" x="8" y="47" width="473" height="21"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Dystopian films continue rule over box office with 'Maze Runner' ">
+                                                    <attributes>
+                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mg7-PO-pvW">
+                                            <rect key="frame" x="8" y="18" width="135" height="21"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Entertainment ">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="20" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="RhN-fm-xiB" secondAttribute="leading" id="1ha-gn-rqn"/>
+                                        <constraint firstItem="RhN-fm-xiB" firstAttribute="top" secondItem="RsY-Xr-IHO" secondAttribute="topMargin" constant="39" id="4UF-QI-peX"/>
+                                        <constraint firstItem="RhN-fm-xiB" firstAttribute="top" secondItem="mg7-PO-pvW" secondAttribute="bottom" constant="8" id="OZo-Kf-JWP"/>
+                                        <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="RhN-fm-xiB" secondAttribute="trailing" constant="19" id="XMd-SZ-fea"/>
+                                        <constraint firstItem="mg7-PO-pvW" firstAttribute="top" secondItem="RsY-Xr-IHO" secondAttribute="topMargin" constant="10" id="fZy-79-bbN"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="mg7-PO-pvW" secondAttribute="leading" id="kSr-ui-9Iy"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="RhN-fm-xiB" secondAttribute="bottom" constant="19" id="n2f-mq-EUa"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="categoryLabel" destination="mg7-PO-pvW" id="Liu-bV-5sQ"/>
+                                    <outlet property="summaryLabel" destination="RhN-fm-xiB" id="iP2-z9-jLe"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="etB-3Y-O4H" id="gA8-uA-664"/>
+                            <outlet property="delegate" destination="etB-3Y-O4H" id="c4x-sL-Si1"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="dateLabel" destination="vij-yl-wZr" id="NaQ-Ox-sFE"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWe-so-bJb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SHImage.png" width="745" height="498"/>
+    </resources>
+</document>
